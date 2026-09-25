@@ -1,5 +1,5 @@
 body {
-  background-color: rgb(235, 229, 223);
+  background-color: white;
   font-family: sans-serif;
 }
 img {
@@ -42,7 +42,7 @@ h2 {
   margin-bottom: 2rem;
 }
 header {
-  background-color: #5c584f;
+  background-color: #000000;
   padding: 1rem 2rem;
 }
 
@@ -87,8 +87,9 @@ nav {
 
   a {
     padding: 2rem;
-    background-color: rgb(148, 173, 187);
+    background-color: rgb(255, 255, 255);
     text-decoration: none;
     color: inherit;
+    border: solid black 2px;
   }
 }
