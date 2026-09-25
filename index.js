@@ -8,6 +8,6 @@ fetch(endpoint)
 function visData(json) {
   console.log(json);
   json.forEach((element) => {
-    claslistcontainer.innerHTML += `<a href=productdetails.html?cat= ${element.category}> ${element.category}</a>`;
+    claslistcontainer.innerHTML += `<a href=produktliste.html?cat=${element.category}> ${element.category}</a>`;
   });
 }

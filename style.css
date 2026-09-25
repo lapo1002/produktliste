@@ -55,3 +55,16 @@ nav a:hover {
 #backbutton:hover {
   cursor: pointer;
 }
+
+#claslistcontainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+
+  a {
+    padding: 2rem;
+    background-color: rgb(94, 200, 200);
+    text-decoration: none;
+    color: inherit;
+  }
+}
