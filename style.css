@@ -1,5 +1,6 @@
 body {
   background-color: rgb(235, 229, 223);
+  font-family: sans-serif;
 }
 img {
   max-width: 100%;
@@ -41,7 +42,7 @@ h2 {
   margin-bottom: 2rem;
 }
 header {
-  background-color: #5e5746;
+  background-color: #5c584f;
   padding: 1rem 2rem;
 }
 
