@@ -1,9 +1,9 @@
 body {
-  background-color: white;
+  background-color: #f5f1ec;
   font-family: sans-serif;
 }
 header {
-  border-bottom: 6px solid #4f8cff;
+  border-bottom: 6px solid #105be7;
 }
 img {
   max-width: 100%;
@@ -20,6 +20,7 @@ img {
 }
 
 article {
+  position: relative;
   display: grid;
   grid-template-columns: subgrid;
   grid-row: span 4;
@@ -101,24 +102,46 @@ nav {
   position: relative;
 }
 
+/* UDSOLGT PRODUKT */
 .udsolgt img {
   filter: grayscale(1);
   opacity: 0.5;
 }
 
-.soldout-label {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
+.udsolgt {
+  pointer-events: none;
+}
 
-  background-color: black;
-  color: white;
+/* FÆLLES FOR LABELS */
+.soldout-label,
+.tilbudslabel {
+  position: absolute;
   padding: 0.5rem 1rem;
 
   font-size: 0.8rem;
   font-weight: bold;
+  text-transform: uppercase;
 }
 
-.udsolgt {
-  pointer-events: none;
+/* UDSOLGT */
+.soldout-label {
+  position: absolute;
+  top: 11rem;
+  left: 50%;
+  transform: translateX(-50%);
+
+  color: black;
+  font-size: 0.9rem;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+}
+
+/* TILBUD */
+.tilbudslabel {
+  top: 1rem;
+  right: 1rem;
+
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
