@@ -30,7 +30,7 @@ function sorter(e) {
   } else if (valgt == "A-Z") {
     udsnit.sort((a, b) => a.productdisplayname.localeCompare(b.productdisplayname));
   } else if (valgt == "Z-A") {
-    udsnit.sort((a, b) => a.productdisplayname.localeCompare(a.productdisplayname));
+    udsnit.sort((a, b) => b.productdisplayname.localeCompare(a.productdisplayname));
   }
   console.log(valgt);
   visData(udsnit);
