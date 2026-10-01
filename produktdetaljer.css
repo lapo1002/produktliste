@@ -8,9 +8,13 @@ header {
   border-bottom: 6px solid #105be7;
 }
 
+.card:hover {
+  transform: none;
+}
+
 #produkt {
   max-width: 1100px;
-  margin: 4rem auto;
+  margin: auto;
 }
 
 .card {
