@@ -34,6 +34,14 @@ article:hover {
   transform: translateY(-6px);
   transition: transform 0.3s ease;
 }
+
+.logo {
+  font-family: "Archivo Black", sans-serif;
+  font-size: 1.3rem;
+  letter-spacing: -0.05em;
+  font-style: italic;
+  color: #00fbff;
+}
 h1 {
   text-align: center;
   font-size: 3rem;
