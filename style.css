@@ -146,27 +146,35 @@ nav {
   color: rgb(255, 255, 255);
 }
 
-#filtre {
+#filtre,
+#sortering {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 1rem;
-
-  margin: 2rem 0;
+  gap: 0.7rem;
 }
 
-#filtre button {
+#filtre {
+  margin: 1.5rem 0 0.7rem 0;
+}
+
+#sortering {
+  margin: 0 0 1.5rem 0;
+}
+
+#filtre button,
+#sortering button {
   background-color: white;
   color: black;
   border: 1px solid black;
   border-radius: 2rem;
-
-  padding: 0.6rem 1.5rem;
-  font-size: 1rem;
+  padding: 0.35rem 0.9rem;
+  font-size: 0.85rem;
   cursor: pointer;
 }
 
-#filtre button:hover {
+#filtre button:hover,
+#sortering button:hover {
   background-color: black;
   color: white;
 }
