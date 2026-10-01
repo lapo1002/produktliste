@@ -1,9 +1,10 @@
 const cat = new URLSearchParams(window.location.search).get("cat");
-const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${cat}`;
+const endpoint = `https://kea-alt-del.dk/t7/api/products?category=${cat}&limit=30`;
 
 const liste = document.querySelector(".liste");
 
 document.querySelectorAll("#filtre button").forEach((knap) => knap.addEventListener("click", filtre));
+document.querySelectorAll("#sortering button").forEach((knap) => knap.addEventListener("click", sorter));
 
 function filtre(e) {
   console.log(e.target.textContent); //hvad står der i den knap der bliver klikket på?
@@ -17,7 +18,23 @@ function filtre(e) {
   }
   visData(udsnit);
 }
+
 let alleData, udsnit;
+
+function sorter(e) {
+  const valgt = e.target.textContent;
+  if (valgt == "Pris lav-høj") {
+    udsnit.sort((a, b) => a.price - b.price);
+  } else if (valgt == "Pris høj-lav") {
+    udsnit.sort((a, b) => b.price - a.price);
+  } else if (valgt == "A-Z") {
+    udsnit.sort((a, b) => a.productdisplayname.localeCompare(b.productdisplayname));
+  } else if (valgt == "Z-A") {
+    udsnit.sort((a, b) => a.productdisplayname.localeCompare(a.productdisplayname));
+  }
+  console.log(valgt);
+  visData(udsnit);
+}
 
 fetch(endpoint)
   .then((res) => res.json())
