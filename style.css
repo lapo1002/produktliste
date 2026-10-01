@@ -40,7 +40,7 @@ article:hover {
   font-size: 1.3rem;
   letter-spacing: -0.05em;
   font-style: italic;
-  color: #00fbff;
+  color: #00eaff;
 }
 h1 {
   text-align: center;
@@ -184,5 +184,5 @@ nav {
 #filtre button:hover,
 #sortering button:hover {
   background-color: black;
-  color: white;
+  color: #00eaff;
 }
